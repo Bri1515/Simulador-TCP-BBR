@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador TCP BBR</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <main class="contenedor">
+    <h1>Simulador TCP BBR</h1>
+
+    <div class="formulario">
+      <label>Ancho de banda estimado (Mbps)</label>
+      <input type="number" id="bandwidth" value="10">
+
+      <label>RTT mínimo (ms)</label>
+      <input type="number" id="rtt" value="50">
+
+      <label>Pérdida de paquetes (%)</label>
+      <input type="number" id="loss" value="1">
+
+      <label>Tiempo de simulación (segundos)</label>
+      <input type="number" id="time" value="10">
+
+      <button onclick="simularBBR()">Simular</button>
+    </div>
+
+    <div class="resultado">
+      <h2>Resultados</h2>
+      <div id="resultado">Ingrese los datos y presione Simular.</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
